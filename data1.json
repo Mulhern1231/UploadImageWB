@@ -1,0 +1,60 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "params": {
+    "card": {
+      "id": "86fd2105-4a1c-5d69-b2c0-5d505cabc849",
+      "imtId": 6629607,
+      "countryProduction": "Россия",
+      "object": "Платья",
+      "addin": [
+      {
+          "type": "Бренд",
+          "params": [
+              {
+                  "value": "ICON DRESS"
+              }
+          ]
+      },
+      {
+          "type": "Пол",
+          "params": [
+              {
+                  "value": "Женский"
+              }
+          ]
+      },
+      {
+          "type": "Комплектация",
+          "params": [
+              {
+                  "value": "платье"
+              }
+          ]
+      }
+      ],
+      "nomenclatures": [
+        {
+          "nmId": 8567702,
+          "vendorCode": "красный",
+          "addin": [
+            {
+                "type": "Фото",
+                "params": [
+                    {
+                        "value": "https://img1.wbstatic.net/big/new/8560000/8567702-1.jpg"
+                    },
+                    {
+                        "value": "https://img1.wbstatic.net/big/new/8560000/8567702-2.jpg"
+                    },
+                    {
+                        "value": "https://img1.wbstatic.net/big/new/8560000/8567702-3.jpg"
+                    }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
