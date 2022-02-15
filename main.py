@@ -1,7 +1,6 @@
 import uuid
 import requests
 import simplejson as json
-
 import os
 from shutil import copyfile
 
@@ -9,7 +8,6 @@ from shutil import copyfile
 articul = 8567702
 
 #задаем значение для запроса на сервер
-#Код авторизации
 headers = {
     'accept': 'application/json',
     'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NJRCI6ImViMmU1NGRjLTdkN2YtNDc5MS1hYWVjLTkxYjZhZTBhMmIzNCJ9.bNOPD9lahEA3HgUeJ-kT7b4QdRFj57vfasFSJopGobk'
@@ -17,6 +15,7 @@ headers = {
 #ЮРЛ для получения товара по артиклу
 url = 'https://suppliers-api.wildberries.ru/card/list'
 #JSON словарь для отправки на сервер (фильтр для поиска по артиклу)
+
 data = {
   "id": 1,
   "jsonrpc": "2.0",
@@ -34,8 +33,6 @@ data = {
 #Запрос на сервер и получение ответа
 response = requests.post(url, headers=headers, data=json.dumps(data) )
 d = json.loads(str(response.text))
-
-#Запрос на сервер для получения imtID
 url = 'https://suppliers-api.wildberries.ru/card/cardByImtID'
 data = {
             "id": 1,
@@ -47,7 +44,6 @@ data = {
 
 response = requests.post(url, headers=headers, data=json.dumps(data))
 templat = json.loads(str(response.text))
-#################################
 
 #Загрзка JSON файла (шаблона)
 with open('data1.json') as f:
