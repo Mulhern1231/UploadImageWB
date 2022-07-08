@@ -10,7 +10,7 @@ articul = 8567702
 #задаем значение для запроса на сервер
 headers = {
     'accept': 'application/json',
-    'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NJRCI6ImViMmU1NGRjLTdkN2YtNDc5MS1hYWVjLTkxYjZhZTBhMmIzNCJ9.bNOPD9lahEA3HgUeJ-kT7b4QdRFj57vfasFSJopGobk'
+    'Authorization': 'API_KEY'
 }
 #ЮРЛ для получения товара по артиклу
 url = 'https://suppliers-api.wildberries.ru/card/list'
