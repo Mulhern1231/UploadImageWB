@@ -6,11 +6,11 @@ from shutil import copyfile
 
 #Артикул
 articul = 8567702
-
+api_key = ""
 #задаем значение для запроса на сервер
 headers = {
     'accept': 'application/json',
-    'Authorization': 'API_KEY'
+    'Authorization': api_key
 }
 #ЮРЛ для получения товара по артиклу
 url = 'https://suppliers-api.wildberries.ru/card/list'
@@ -91,7 +91,7 @@ for i in os.listdir('OLD'):
     }
     HEADERS = {
         'accept': 'application/json',
-        'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NJRCI6ImViMmU1NGRjLTdkN2YtNDc5MS1hYWVjLTkxYjZhZTBhMmIzNCJ9.bNOPD9lahEA3HgUeJ-kT7b4QdRFj57vfasFSJopGobk',
+        'Authorization': api_key
         'X-File-id': str(uid),
     }
     response = requests.post(url, headers=HEADERS, files=files)
